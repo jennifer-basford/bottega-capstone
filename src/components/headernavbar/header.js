@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 
+import background from "../../../images/header-background.jpg";
+
 class Header extends Component {
   render() {
     return (
       <div className="header">
-        <img src="images/Honeysuckle Logo white.jpg" />
-        <img src="images/header-background.jpg" />
+        <div
+          className="header-background"
+          styles={{ backgroundImage: `url(${background})` }}
+        >
+          Background Image
+        </div>
+
+        <div className="banner-image"></div>
+        <img className="logo-white" src="images/Honeysuckle Logo white.jpg" />
       </div>
     );
   }

@@ -11,6 +11,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 import "./style/main.scss";
 
 import Home from "./components/home";
+import About from "./components/about-us";
 
 function main() {
   ReactDOM.render(
@@ -19,6 +20,7 @@ function main() {
         <App />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/about-us" component={About} />
         </Switch>
       </Router>
     </Provider>,

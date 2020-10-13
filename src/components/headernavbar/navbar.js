@@ -1,25 +1,21 @@
 import React, { Component } from "react";
-
-import { MenuItems } from "./menuItems";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbarItems">
-        <h1 className="navbar-logo">Honeysuckle</h1>
-        <div className="menu-icon"></div>
-        <ul>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <div className="nav-wrapper">
+        <div className="nav-links">
+          <NavLink exact to="/">
+            Home
+          </NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
+          <NavLink to="/shop">Shop</NavLink>
+          <NavLink to="/menu">Menu</NavLink>
+          <NavLink to="/contact-us">Contact Us</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
+        </div>
+      </div>
     );
   }
 }

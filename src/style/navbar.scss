@@ -1,1 +1,12 @@
+.nav-wrapper {
+  height: 30px;
+  border-radius: 8px;
+}
 
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-left: 750px;
+  font-size: 17px;
+}
