@@ -1,0 +1,21 @@
+.about-us-wrapper {
+  .about-us-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .about-us-logo img {
+    height: 300px;
+    width: 400px;
+  }
+  .about-us-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

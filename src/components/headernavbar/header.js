@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 
-import background from "../../../images/header-background.jpg";
+import backgroundPicture from "../../../images/header-background.jpg";
 
 class Header extends Component {
   render() {
     return (
       <div className="header">
+        <div className="logo-wrapper">
+          <img src={require("../../../images/honeysuckle-logo-white2.jpg")} />
+        </div>
         <div
           className="header-background"
-          styles={{ backgroundImage: `url(${background})` }}
-        >
-          Background Image
-        </div>
-
-        <div className="banner-image"></div>
-        <img className="logo-white" src="images/Honeysuckle Logo white.jpg" />
+          style={{
+            background: "url(" + backgroundPicture + ") no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
       </div>
     );
   }

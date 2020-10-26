@@ -1,12 +1,26 @@
 .nav-wrapper {
-  height: 30px;
-  border-radius: 8px;
-}
+  height: 70px;
+  border-bottom: 1px solid #cbc8c1;
+  display: grid;
+  align-items: center;
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-end;
-  margin-left: 750px;
-  font-size: 17px;
+  padding-right: 20px;
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-left: 750px;
+    font-size: 17px;
+    margin-top: 10px;
+
+    a {
+      text-decoration: none;
+      color: #1d1c1a;
+
+      &:hover {
+        color: #777673;
+      }
+    }
+  }
 }

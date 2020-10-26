@@ -1,0 +1,33 @@
+.main-page-wrapper {
+  margin-top: 80px;
+  margin-left: 30px;
+
+  .main-page-headline {
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-family: "Sacramento", cursive;
+    color: #1d1c1a;
+  }
+
+  .main-page-content {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #777673;
+    margin-bottom: 40px;
+  }
+
+  .main-page-announcement-headline {
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-family: "Sacramento", cursive;
+    color: #1d1c1a;
+  }
+
+  .main-page-announcement-content {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #777673;
+  }
+}
