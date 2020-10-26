@@ -14,7 +14,7 @@ class Shop extends Component {
     return (
       <div>
         <Navbar />
-        <SignIn />
+        {/* This is where you will put the sign in button and link */}
         <h1>Welcome to our Shop...</h1>
       </div>
     );
