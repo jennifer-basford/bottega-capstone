@@ -1,16 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import App from "./components/app";
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware()(
+  compose(
+    (window.devToolsExtension ? window.devToolsExtension() : (f) => f)(
+      createStore
+    )
+  )
+);
 
 import "./style/main.scss";
 
 import history from "./history";
+import Signin from "./components/auth/signin";
+import Signup from "./components/auth/signup";
 
 import Home from "./components/home";
 import About from "./components/about-us";
@@ -29,6 +37,8 @@ function main() {
           <Route path="/contact-us" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/shop" component={Shop} />
+          <Route path="/signin" component={Signin} />
+          <Route path="/signup" component={Signup} />
         </Switch>
       </Router>
     </Provider>,

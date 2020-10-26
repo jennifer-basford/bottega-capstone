@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 
+import SignInForm from "./signin-form";
+
 class SignIn extends Component {
   render() {
-    return <div className="sign-in-wrapper">This is where you sign in...</div>;
+    return (
+      <div className="sign-in">
+        <SignInForm className="sign-in__form" />
+      </div>
+    );
   }
 }
 
