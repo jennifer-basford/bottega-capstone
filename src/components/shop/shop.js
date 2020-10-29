@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Navbar from "../headernavbar/navbar";
 import SignIn from "../auth/signin";
+import LoginButton from "../login-button";
 
 class Shop extends Component {
   constructor(props) {
@@ -12,10 +13,12 @@ class Shop extends Component {
 
   render() {
     return (
-      <div>
+      <div className="shop-wrapper">
         <Navbar />
-        {/* This is where you will put the sign in button and link */}
-        <h1>Welcome to our Shop...</h1>
+        <div className="shop-welcome-login">
+          <h1>Welcome to our Shop...</h1>
+          {/*<LoginButton />*/}
+        </div>
       </div>
     );
   }

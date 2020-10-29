@@ -20,6 +20,27 @@ class Main extends Component {
             free ingredients.
           </ul>
         </div>
+        {/*<div className="main-page-image-wrapper">
+          <div
+            className="main-page-left-image"
+            style={{
+              background: "url(" + cupImage + ") no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            
+          ></div>
+          <div className="main-page-center-image">
+            <img
+              src={require("../../images/main-page-images/dining-image.jpg")}
+            />
+          </div>
+          <div className="main-page-right-image">
+            <img
+              src={require("../../images/main-page-images/table-image.jpg")}
+            />
+          </div>
+        </div>*/}
         <div className="main-page-announcement-headline">
           Covid-19 Updates...
         </div>

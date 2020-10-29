@@ -32,7 +32,6 @@ class SignInForm extends Component {
           name="login"
           component={FormButton}
         />
-        Sign in here
       </form>
     );
   }

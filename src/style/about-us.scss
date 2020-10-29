@@ -7,15 +7,23 @@
     height: 300px;
     width: 400px;
   }
-  .about-us-image {
-    height: 200px;
-    width: 200px;
-  }
 
-  .description {
-    font-size: 18px;
-    margin-top: 15px;
-    padding-left: 120px;
-    padding-right: 120px;
+  .about-us-columns {
+    display: grid;
+    grid-template-columns: 400px auto;
+    padding-left: 30px;
+
+    .about-us-description {
+      font-size: 18px;
+      margin-top: 15px;
+      padding-left: 50px;
+      padding-right: 120px;
+    }
+    .about-us-image {
+      height: 300px;
+      width: 350px;
+      align-self: start;
+      margin-top: 20px;
+    }
   }
 }
