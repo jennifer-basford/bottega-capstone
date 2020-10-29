@@ -1,5 +1,10 @@
 .sign-in {
-  //display: flex;
-  //flex-direction: row;
-  //justify-content: flex-start;
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    height: 300px;
+    width: 400px;
+  }
 }

@@ -11,6 +11,9 @@ class SignIn extends Component {
   render() {
     return (
       <div className="sign-in">
+        <div className="logo-wrapper">
+          <img src={require("../../../images/honeysuckle-logo-white2.jpg")} />
+        </div>
         <LoginTitle className="sign-in__login-title" title="Login" />
         <SignInForm onSubmit={this.onSubmit} className="sign-in__form" />
       </div>
