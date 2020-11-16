@@ -28,7 +28,6 @@ class Main extends Component {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            
           ></div>
           <div className="main-page-center-image">
             <img
@@ -40,7 +39,7 @@ class Main extends Component {
               src={require("../../images/main-page-images/table-image.jpg")}
             />
           </div>
-        </div>*/}
+          </div>*/}
         <div className="main-page-announcement-headline">
           Covid-19 Updates...
         </div>

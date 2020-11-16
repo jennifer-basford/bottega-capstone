@@ -10,10 +10,8 @@ class Navbar extends Component {
             Home
           </NavLink>
           <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/shop">Shop</NavLink>
           <NavLink to="/menu">Menu</NavLink>
           <NavLink to="/contact-us">Contact Us</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
         </div>
       </div>
     );
