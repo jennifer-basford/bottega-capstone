@@ -17,6 +17,18 @@ export class FormInput extends Component {
   }
 }
 
+export class FormComment extends Component {
+  render() {
+    const { className, title, type, input } = this.props;
+    return (
+      <div className={`${className} form-comment`}>
+        <label className="form-comment__label">{title}</label>
+        <textarea className="form-comment__input" type={type} {...input} />
+      </div>
+    );
+  }
+}
+
 export class FormButton extends Component {
   render() {
     const { className, title, type, onClick, input } = this.props;

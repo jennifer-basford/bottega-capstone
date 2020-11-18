@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
 import { reduxForm, Field } from "redux-form";
-import { FormInput, FormButton } from "../form-fields";
+import { FormInput, FormButton, FormComment } from "../form-fields";
 
-class SignInForm extends Component {
+class ContactForm extends Component {
   render() {
     const { className, handleSubmit } = this.props;
     return (
-      <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
+      <form onSubmit={handleSubmit} className={`${className} contact-us-form`}>
         <Field
-          className="sign-in-form__name"
+          className="contact-us-form__name"
           type="name"
           title="Name"
           placeholder="Name"
@@ -17,7 +17,7 @@ class SignInForm extends Component {
           component={FormInput}
         />
         <Field
-          className="sign-in-form__email"
+          className="contact-us-form__email"
           type="email"
           title="Email"
           placeholder="Email"
@@ -25,16 +25,15 @@ class SignInForm extends Component {
           component={FormInput}
         />
         <Field
-          className="sign-in-form__comment"
+          className="contact-us-form__comment"
           type="comment"
           title="Comment"
-          placeholder="Comment"
           name="comment"
-          component={FormInput}
+          component={FormComment}
         />
 
         <Field
-          className="sign-in-form__submit"
+          className="contact-us-form__submit"
           onClick={() => console.log("submitting")}
           type="submit"
           title="Submit"
@@ -46,8 +45,8 @@ class SignInForm extends Component {
   }
 }
 
-SignInForm = reduxForm({
-  form: "SignInForm",
-})(SignInForm);
+ContactForm = reduxForm({
+  form: "ContactForm",
+})(ContactForm);
 
-export default SignInForm;
+export default ContactForm;
