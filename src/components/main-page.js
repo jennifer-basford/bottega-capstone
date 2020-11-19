@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CarouselSlide from "./carousel/carousel";
 
 class Main extends Component {
   render() {
@@ -20,29 +21,11 @@ class Main extends Component {
             free ingredients.
           </ul>
         </div>
-        {/*<div className="main-page-image-wrapper">
-          <div
-            className="main-page-left-image"
-            style={{
-              background: "url(" + cupImage + ") no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-          <div className="main-page-center-image">
-            <img
-              src={require("../../images/main-page-images/dining-image.jpg")}
-            />
-          </div>
-          <div className="main-page-right-image">
-            <img
-              src={require("../../images/main-page-images/table-image.jpg")}
-            />
-          </div>
-          </div>*/}
+        <CarouselSlide />
         <div className="main-page-announcement-headline">
           Covid-19 Updates...
         </div>
+
         <div className="main-page-announcement-content">
           Now open for curb-side pickup, walk-up ordering, limited dine-in and
           we’ve expanded our outdoor seating. We are following the guidelines
