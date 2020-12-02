@@ -11,3 +11,15 @@
     margin-left: 100px;
   }
 }
+
+@media (max-width: 780px) {
+  .contact-wrapper {
+    .logo-wrapper {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .contact-body-wrapper {
+      margin-left: 10px;
+    }
+  }
+}
