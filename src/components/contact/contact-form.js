@@ -27,7 +27,10 @@ const ContactForm = (props) => {
       comment: comment,
     };
     axios
-      .post("http://127.0.0.1:5000/contact", newContact)
+      .post(
+        "https://honeysuckle-coffee-backend.herokuapp.com/contact",
+        newContact
+      )
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
     setName("");

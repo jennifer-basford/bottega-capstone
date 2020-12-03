@@ -22,21 +22,10 @@ class Navbar extends Component {
           <NavLink className="navbar-link" to="/about-us">
             About Us
           </NavLink>
-          <NavLink className="navbar-link" to="/menu">
-            Menu
-          </NavLink>
           <NavLink className="navbar-link" to="/contact-us">
             Contact Us
           </NavLink>
         </div>
-        {/* <div className={this.state.clicked ? "nav-links-active" : "nav-links"}>
-          <NavLink exact to="/">
-            Home
-          </NavLink>
-          <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/menu">Menu</NavLink>
-          <NavLink to="/contact-us">Contact Us</NavLink>
-        </div> */}
       </div>
     );
   }
