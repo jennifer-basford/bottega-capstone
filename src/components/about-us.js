@@ -2,8 +2,9 @@ import React, { Component } from "react";
 
 import Navbar from "./headernavbar/navbar";
 import Footer from "./footer";
+import AuthButton from "./auth/auth-button";
 
-import aboutImage from "../../images/about-image.jpg";
+import aboutImage from "../../static/assets/images/about-image.jpg";
 
 class About extends Component {
   render() {
@@ -12,7 +13,7 @@ class About extends Component {
         <Navbar />
         <div className="about-us-body-wrapper">
           <div className="about-us-logo">
-            <img src={require("../../images/honeysuckle-logo-white2.jpg")} />
+            <img src={require("../../static/assets/images/honeysuckle-logo-white2.jpg")} />
           </div>
           <div className="about-us-columns">
             <div
@@ -57,6 +58,7 @@ class About extends Component {
           </div>
           <Footer />
         </div>
+        <AuthButton />
       </div>
     );
   }

@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import { Router, Switch, Route } from "react-router-dom";
 import App from "./components/app";
+
 import reducers from "./reducers";
 
 const store = createStore(
@@ -22,6 +23,7 @@ import history from "./history";
 import Home from "./components/home";
 import About from "./components/about-us";
 import Contact from "./components/contact/contact-us";
+import Auth from "./components/auth/auth";
 
 function main() {
   ReactDOM.render(
@@ -32,6 +34,7 @@ function main() {
           <Route path="/" exact component={Home} />
           <Route path="/about-us" component={About} />
           <Route path="/contact-us" component={Contact} />
+          <Route path="/auth" component={Auth} />
         </Switch>
       </Router>
     </Provider>,

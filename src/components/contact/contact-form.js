@@ -20,7 +20,6 @@ const ContactForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("helloooo");
     let newContact = {
       name: name,
       email: email,

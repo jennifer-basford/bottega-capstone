@@ -4,6 +4,7 @@ import Header from "./headernavbar/header";
 import Navbar from "./headernavbar/navbar";
 import Main from "./main-page";
 import Footer from "./footer";
+import AuthButton from "./auth/auth-button";
 
 export default function () {
   return (
@@ -12,6 +13,7 @@ export default function () {
       <Navbar />
       <Main />
       <Footer />
+      <AuthButton />
     </div>
   );
 }
