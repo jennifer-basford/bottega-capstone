@@ -22,7 +22,7 @@ import "./style/main.scss";
 import history from "./history";
 import Home from "./components/home";
 import About from "./components/about-us";
-import Contact from "./components/contact/contact-us";
+import Review from "./components/review/review";
 import Auth from "./components/auth/auth";
 
 function main() {
@@ -33,7 +33,7 @@ function main() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about-us" component={About} />
-          <Route path="/contact-us" component={Contact} />
+          <Route path="/review" component={Review} />
           <Route path="/auth" component={Auth} />
         </Switch>
       </Router>

@@ -22,8 +22,8 @@ class Navbar extends Component {
           <NavLink className="navbar-link" to="/about-us">
             About Us
           </NavLink>
-          <NavLink className="navbar-link" to="/contact-us">
-            Contact Us
+          <NavLink className="navbar-link" to="/review">
+            Feedback
           </NavLink>
         </div>
       </div>

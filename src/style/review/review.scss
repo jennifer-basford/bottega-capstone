@@ -1,4 +1,4 @@
-.contact-wrapper {
+.review-wrapper {
   .logo-wrapper {
     display: flex;
     justify-content: center;
@@ -7,18 +7,18 @@
     height: 300px;
     width: 400px;
   }
-  .contact-body-wrapper {
+  .review-body-wrapper {
     margin-left: 100px;
   }
 }
 
 @media (max-width: 780px) {
-  .contact-wrapper {
+  .review-wrapper {
     .logo-wrapper {
       display: flex;
       justify-content: flex-start;
     }
-    .contact-body-wrapper {
+    .review-body-wrapper {
       margin-left: 10px;
     }
   }

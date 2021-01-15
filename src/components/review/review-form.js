@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const ContactForm = (props) => {
+const ReviewForm = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
+  const [review, setReview] = useState("");
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -14,32 +14,32 @@ const ContactForm = (props) => {
     setEmail(event.target.value);
   };
 
-  const handleCommentChange = (event) => {
-    setComment(event.target.value);
+  const handleReviewChange = (event) => {
+    setReview(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newContact = {
+    let newReview = {
       name: name,
       email: email,
-      comment: comment,
+      review: review,
     };
     axios
       .post(
-        "https://honeysuckle-coffee-backend.herokuapp.com/contact",
-        newContact
+        "https://honeysuckle-coffee-backend.herokuapp.com/admin",
+        newReview
       )
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
     setName("");
     setEmail("");
-    setComment("");
+    setReview("");
   };
 
   return (
-    <div className="contact-us">
-      <form className="contact-us-form" onSubmit={handleSubmit}>
+    <div className="review">
+      <form className="review-form" onSubmit={handleSubmit}>
         <input
           className="form-input"
           placeholder="Name"
@@ -55,11 +55,11 @@ const ContactForm = (props) => {
           onChange={handleEmailChange}
         />
         <textarea
-          className="form-comment"
-          placeholder="Comment"
+          className="form-review"
+          placeholder="Leave a Review"
           type="text"
-          value={comment}
-          onChange={handleCommentChange}
+          value={review}
+          onChange={handleReviewChange}
         />
         <input className="form-button" type="submit" value="Submit" />
       </form>
@@ -67,4 +67,4 @@ const ContactForm = (props) => {
   );
 };
 
-export default ContactForm;
+export default ReviewForm;

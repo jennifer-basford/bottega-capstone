@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 
 import Navbar from "../headernavbar/navbar";
-import ContactForm from "./contact-form";
+import ReviewForm from "./review-form";
 import Footer from "../footer";
-import ContactTitle from "./contact-title";
+import ReviewTitle from "./review-title";
 import AuthButton from "../auth/auth-button";
 
-class Contact extends Component {
+class Review extends Component {
   render() {
     return (
-      <div className="contact-wrapper">
+      <div className="review-wrapper">
         <Navbar />
         <div className="logo-wrapper">
           <img src={require("../../../static/assets/images/honeysuckle-logo-white2.jpg")} />
         </div>
-        <div className="contact-body-wrapper">
-          <ContactTitle className="contact__contact-title" title="Contact Us" />
-          <ContactForm />
+        <div className="review-body-wrapper">
+          <ReviewTitle className="review__review-title" title="Review Us!" />
+          <ReviewForm />
         </div>
         <Footer />
         <AuthButton />
@@ -25,4 +25,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Review;
