@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import Navbar from "./headernavbar/navbar";
 import Footer from "./footer";
-import AuthButton from "./auth/auth-button";
 
 import aboutImage from "../../static/assets/images/about-image.jpg";
 
@@ -58,7 +57,6 @@ class About extends Component {
           </div>
           <Footer />
         </div>
-        <AuthButton />
       </div>
     );
   }

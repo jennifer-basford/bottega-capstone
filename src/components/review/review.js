@@ -4,7 +4,6 @@ import Navbar from "../headernavbar/navbar";
 import ReviewForm from "./review-form";
 import Footer from "../footer";
 import ReviewTitle from "./review-title";
-import AuthButton from "../auth/auth-button";
 
 
 class Review extends Component {
@@ -21,7 +20,6 @@ class Review extends Component {
         </div>
         
         <Footer />
-        <AuthButton />
       </div>
     );
   }

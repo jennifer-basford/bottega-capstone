@@ -23,7 +23,6 @@ import history from "./history";
 import Home from "./components/home";
 import About from "./components/about-us";
 import Review from "./components/review/review";
-import Auth from "./components/auth/auth";
 
 function main() {
   ReactDOM.render(
@@ -34,7 +33,6 @@ function main() {
           <Route path="/" exact component={Home} />
           <Route path="/about-us" component={About} />
           <Route path="/review" component={Review} />
-          <Route path="/auth" component={Auth} />
         </Switch>
       </Router>
     </Provider>,
