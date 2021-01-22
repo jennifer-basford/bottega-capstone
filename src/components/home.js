@@ -3,8 +3,9 @@ import React from "react";
 import Header from "./headernavbar/header";
 import Navbar from "./headernavbar/navbar";
 import Main from "./main-page";
+import ReviewReturn from "../components/review/review-return";
 import Footer from "./footer";
-import AuthButton from "./auth/auth-button";
+
 
 export default function () {
   return (
@@ -12,8 +13,8 @@ export default function () {
       <Header />
       <Navbar />
       <Main />
-      <Footer />
-      <AuthButton />
+      <ReviewReturn />
+      <Footer />  
     </div>
   );
 }

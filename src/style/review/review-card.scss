@@ -1,0 +1,56 @@
+.review-return {
+    margin-top: 100px;
+    font-size: medium;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    padding-left: 30px;
+   
+
+    .review-headline {
+        margin-bottom: 15px;
+        font-size: 45px;
+        font-family: "Sacramento", cursive;
+        color: #1d1c1a;
+    }
+}
+
+.review-card {
+    width: 700px;
+    display: grid;
+    grid-row-gap: 15px;
+    padding-bottom: 20px;
+    grid-template-columns: 700px;
+    border-style: solid;
+    border-color: #777673;
+    margin-bottom: 15px;
+}
+
+.review-card_name {
+    background-color: #cbb980;
+    font-size: 20px;
+    color: #1d1c1a;
+}
+
+.review-card_comment {
+    font-size: 15px;
+    color: #777673;
+    
+}
+
+@media (max-width: 600px) {
+    
+      .review-card {
+        width: 500px;
+  
+        
+        .review-card_name {
+          width: 500px;
+        }
+
+        .review-card_comment {
+            width: 500px;
+        }
+      }
+    }
+  

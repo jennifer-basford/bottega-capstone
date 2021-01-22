@@ -20,11 +20,13 @@ const ReviewForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     let newReview = {
       name: name,
       email: email,
-      review: review,
+      comment: review,
     };
+    console.log(newReview)
     axios
       .post(
         "https://honeysuckle-coffee-backend.herokuapp.com/admin",

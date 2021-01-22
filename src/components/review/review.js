@@ -6,6 +6,7 @@ import Footer from "../footer";
 import ReviewTitle from "./review-title";
 import AuthButton from "../auth/auth-button";
 
+
 class Review extends Component {
   render() {
     return (
@@ -18,6 +19,7 @@ class Review extends Component {
           <ReviewTitle className="review__review-title" title="Review Us!" />
           <ReviewForm />
         </div>
+        
         <Footer />
         <AuthButton />
       </div>
