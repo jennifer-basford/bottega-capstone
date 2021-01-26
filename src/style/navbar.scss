@@ -60,17 +60,3 @@
   }
 }
 
-@media (min-width: 601px) {
-  .nav-links-active {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 17px;
-    height: 20px;
-
-    .navbar-link {
-      padding-right: 15px;
-    }
-  }
-}

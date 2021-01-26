@@ -17,7 +17,7 @@ export default function CarouselSlide() {
     <div className="carousel_slide">
       <div
         onMouseEnter={() => setIsShowing(true)}
-        onMouseLeave={() => setIsShowing(false)}
+        onMouseLeave={() => setIsShowing(true)}
       >
         <Carousel
           pagination={false}

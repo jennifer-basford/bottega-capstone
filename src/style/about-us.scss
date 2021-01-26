@@ -28,20 +28,4 @@
   }
 }
 
-@media (max-width: 600px) {
-  .about-us-body-wrapper {
-    flex-direction: column;
 
-    .about-us-columns {
-      grid-template-columns: 1fr;
-
-      .about-us-image {
-        display: block;
-        margin: auto;
-      }
-      .about-us-description {
-        text-align: center;
-      }
-    }
-  }
-}
